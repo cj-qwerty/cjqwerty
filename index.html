@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Random Element</title>
+    <title>Random Chemical Element</title>
     <style>
       body {
         font-family: "Arial", sans-serif;
@@ -73,12 +73,38 @@
       .reset-button:hover {
         background-color: #c93f63;
       }
+
+      .about {
+        display: none;
+        margin-top: 30px;
+        text-align: left;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 16px;
+        color: #555;
+      }
+
+      .about h2 {
+        color: #333;
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+
+      .about p {
+        margin-bottom: 15px;
+      }
+
+      .ads-container {
+        margin-top: 50px;
+      }
     </style>
     <script
       async
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9265736954257166"
       crossorigin="anonymous"
     ></script>
+    <meta name="google-adsense-account" content="ca-pub-9265736954257166" />
   </head>
   <body>
     <div class="container">
@@ -92,11 +118,49 @@
         <button onclick="showAnswer()">❓ Reveal</button>
         <button class="reset-button" onclick="resetRandom()">🔄 Reset</button>
       </div>
+
+      <!-- ปุ่มแสดงข้อมูลเพิ่มเติม -->
+      <button onclick="toggleAbout()">ℹ️ Show Information</button>
+
+      <!-- ข้อมูลเพิ่มเติม -->
+      <div class="about">
+        <h2>About Chemical Elements</h2>
+        <p>
+          The periodic table is a list of all known chemical elements, arranged
+          by atomic number and electron configuration. Each element is unique,
+          with its own properties and uses. Some elements are essential for
+          life, while others are used in technology, industry, and many other
+          applications.
+        </p>
+        <p>
+          For example, <strong>Hydrogen (H)</strong> is the lightest element and
+          is a key building block for all matter in the universe. It is also
+          crucial for the energy production process in stars, including the Sun.
+        </p>
+        <p>
+          On the other hand, elements like <strong>Iron (Fe)</strong> are
+          critical for life as they are a key component of hemoglobin in our
+          blood, which is responsible for carrying oxygen throughout our bodies.
+        </p>
+      </div>
+    </div>
+
+    <div class="ads-container">
+      <ins
+        class="adsbygoogle"
+        style="display: block"
+        data-ad-client="ca-pub-9265736954257166"
+        data-ad-slot="9330812069"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      ></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
     </div>
 
     <script>
       const elements = [
-        //อย่าโกง นะจะ
         { symbol: "H", name: "Hydrogen" },
         { symbol: "He", name: "Helium" },
         { symbol: "Li", name: "Lithium" },
@@ -173,23 +237,18 @@
         document.getElementById("symbol").textContent = "?";
         document.getElementById("name").textContent = "";
       }
-    </script>
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9265736954257166"
-      crossorigin="anonymous"
-    ></script>
-    <!-- cjqwerty -->
-    <ins
-      class="adsbygoogle"
-      style="display: block"
-      data-ad-client="ca-pub-9265736954257166"
-      data-ad-slot="9330812069"
-      data-ad-format="auto"
-      data-full-width-responsive="true"
-    ></ins>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
+
+      function toggleAbout() {
+        const aboutSection = document.querySelector(".about");
+        if (
+          aboutSection.style.display === "none" ||
+          aboutSection.style.display === ""
+        ) {
+          aboutSection.style.display = "block";
+        } else {
+          aboutSection.style.display = "none";
+        }
+      }
     </script>
   </body>
 </html>
