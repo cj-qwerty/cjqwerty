@@ -12,13 +12,11 @@
         color: #333;
         margin: 0;
       }
-
       h1 {
         font-size: 36px;
         margin-bottom: 20px;
         color: #4a90e2;
       }
-
       #symbol {
         font-size: 120px;
         font-weight: bold;
@@ -26,13 +24,11 @@
         color: #4a90e2;
         transition: color 0.3s ease;
       }
-
       #name {
         font-size: 32px;
         color: #777;
         margin-top: 10px;
       }
-
       button {
         padding: 12px 25px;
         margin: 15px;
@@ -44,37 +40,30 @@
         cursor: pointer;
         transition: background-color 0.3s ease;
       }
-
       button:hover {
         background-color: #357abd;
       }
-
       button:active {
         background-color: #2e6b94;
       }
-
       .container {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
       }
-
       .buttons-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
       }
-
       .reset-button {
         background-color: #e94e77;
       }
-
       .reset-button:hover {
         background-color: #c93f63;
       }
-
-      .about {
+      .info {
         display: none;
         margin-top: 30px;
         text-align: left;
@@ -84,21 +73,19 @@
         font-size: 16px;
         color: #555;
       }
-
-      .about h2 {
+      .info h2 {
         color: #333;
         font-size: 28px;
         margin-bottom: 10px;
       }
-
-      .about p {
+      .info p {
         margin-bottom: 15px;
       }
-
       .ads-container {
         margin-top: 50px;
       }
     </style>
+    <!-- Google Adsense -->
     <script
       async
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9265736954257166"
@@ -111,40 +98,21 @@
       <h1>Random Chemical Element</h1>
       <div id="symbol">?</div>
       <div id="name"></div>
-
       <div class="buttons-container">
         <button onclick="startRandom()">▶️ Start</button>
         <button onclick="stopRandom()">⏹️ Stop</button>
         <button onclick="showAnswer()">❓ Reveal</button>
         <button class="reset-button" onclick="resetRandom()">🔄 Reset</button>
       </div>
-
-      <!-- ปุ่มแสดงข้อมูลเพิ่มเติม -->
-      <button onclick="toggleAbout()">ℹ️ Show Information</button>
-
-      <!-- ข้อมูลเพิ่มเติม -->
-      <div class="about">
-        <h2>About Chemical Elements</h2>
+      <button onclick="toggleInfo()">ℹ️ Show Information</button>
+      <div class="info" id="element-info">
+        <h2>Element Information</h2>
         <p>
-          The periodic table is a list of all known chemical elements, arranged
-          by atomic number and electron configuration. Each element is unique,
-          with its own properties and uses. Some elements are essential for
-          life, while others are used in technology, industry, and many other
-          applications.
-        </p>
-        <p>
-          For example, <strong>Hydrogen (H)</strong> is the lightest element and
-          is a key building block for all matter in the universe. It is also
-          crucial for the energy production process in stars, including the Sun.
-        </p>
-        <p>
-          On the other hand, elements like <strong>Iron (Fe)</strong> are
-          critical for life as they are a key component of hemoglobin in our
-          blood, which is responsible for carrying oxygen throughout our bodies.
+          Select an element and click "Show Information" to see details here.
         </p>
       </div>
     </div>
-
+    <!-- Ads Section -->
     <div class="ads-container">
       <ins
         class="adsbygoogle"
@@ -158,58 +126,361 @@
         (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
     </div>
-
     <script>
       const elements = [
-        { symbol: "H", name: "Hydrogen" },
-        { symbol: "He", name: "Helium" },
-        { symbol: "Li", name: "Lithium" },
-        { symbol: "Be", name: "Beryllium" },
-        { symbol: "B", name: "Boron" },
-        { symbol: "C", name: "Carbon" },
-        { symbol: "N", name: "Nitrogen" },
-        { symbol: "O", name: "Oxygen" },
-        { symbol: "F", name: "Fluorine" },
-        { symbol: "Ne", name: "Neon" },
-        { symbol: "Na", name: "Sodium" },
-        { symbol: "Mg", name: "Magnesium" },
-        { symbol: "Al", name: "Aluminium" },
-        { symbol: "Si", name: "Silicon" },
-        { symbol: "P", name: "Phosphorus" },
-        { symbol: "S", name: "Sulfur" },
-        { symbol: "Cl", name: "Chlorine" },
-        { symbol: "Ar", name: "Argon" },
-        { symbol: "K", name: "Potassium" },
-        { symbol: "Ca", name: "Calcium" },
-        { symbol: "Sc", name: "Scandium" },
-        { symbol: "Ti", name: "Titanium" },
-        { symbol: "V", name: "Vanadium" },
-        { symbol: "Cr", name: "Chromium" },
-        { symbol: "Mn", name: "Manganese" },
-        { symbol: "Fe", name: "Iron" },
-        { symbol: "Co", name: "Cobalt" },
-        { symbol: "Ni", name: "Nickel" },
-        { symbol: "Cu", name: "Copper" },
-        { symbol: "Zn", name: "Zinc" },
-        { symbol: "Ga", name: "Gallium" },
-        { symbol: "Ge", name: "Germanium" },
-        { symbol: "As", name: "Arsenic" },
-        { symbol: "Se", name: "Selenium" },
-        { symbol: "Br", name: "Bromine" },
-        { symbol: "Kr", name: "Krypton" },
-        { symbol: "Rb", name: "Rubidium" },
-        { symbol: "Sr", name: "Strontium" },
-        { symbol: "In", name: "Indium" },
-        { symbol: "Sn", name: "Tin" },
-        { symbol: "Sb", name: "Antimony" },
-        { symbol: "Te", name: "Tellurium" },
-        { symbol: "I", name: "Iodine" },
-        { symbol: "Xe", name: "Xenon" },
+        {
+          symbol: "H",
+          name: "Hydrogen",
+          info: "Atomic Number: 1. Lightest element, colorless gas, used in rocket fuel and the Sun's fusion.",
+        },
+        {
+          symbol: "He",
+          name: "Helium",
+          info: "Atomic Number: 2. Noble gas, inert, used in balloons and cooling superconducting magnets.",
+        },
+        {
+          symbol: "Li",
+          name: "Lithium",
+          info: "Atomic Number: 3. Soft metal, used in rechargeable batteries.",
+        },
+        {
+          symbol: "Be",
+          name: "Beryllium",
+          info: "Atomic Number: 4. Strong, lightweight metal, used in aerospace and military applications.",
+        },
+        {
+          symbol: "B",
+          name: "Boron",
+          info: "Atomic Number: 5. Metalloid, used in glass and ceramics, enhances strength and heat resistance.",
+        },
+        {
+          symbol: "C",
+          name: "Carbon",
+          info: "Atomic Number: 6. Fundamental building block of life, found in diamonds and graphite.",
+        },
+        {
+          symbol: "N",
+          name: "Nitrogen",
+          info: "Atomic Number: 7. Colorless, odorless gas, makes up 78% of Earth's atmosphere.",
+        },
+        {
+          symbol: "O",
+          name: "Oxygen",
+          info: "Atomic Number: 8. Essential for respiration, reactive element, supports combustion.",
+        },
+        {
+          symbol: "F",
+          name: "Fluorine",
+          info: "Atomic Number: 9. Highly reactive, used in toothpaste and Teflon.",
+        },
+        {
+          symbol: "Ne",
+          name: "Neon",
+          info: "Atomic Number: 10. Noble gas, emits red-orange glow, used in neon signs.",
+        },
+        {
+          symbol: "Na",
+          name: "Sodium",
+          info: "Atomic Number: 11. Soft, silvery-white metal, highly reactive, used in table salt.",
+        },
+        {
+          symbol: "Mg",
+          name: "Magnesium",
+          info: "Atomic Number: 12. Light metal, used in alloys, flammable, and in fireworks.",
+        },
+        {
+          symbol: "Al",
+          name: "Aluminum",
+          info: "Atomic Number: 13. Lightweight metal, used in transportation, packaging, and electronics.",
+        },
+        {
+          symbol: "Si",
+          name: "Silicon",
+          info: "Atomic Number: 14. Metalloid, used in electronics, solar cells, and construction materials.",
+        },
+        {
+          symbol: "P",
+          name: "Phosphorus",
+          info: "Atomic Number: 15. Nonmetal, used in fertilizers, detergents, and matches.",
+        },
+        {
+          symbol: "S",
+          name: "Sulfur",
+          info: "Atomic Number: 16. Yellow, nonmetal, used in fertilizers, vulcanization of rubber, and in sulfuric acid.",
+        },
+        {
+          symbol: "Cl",
+          name: "Chlorine",
+          info: "Atomic Number: 17. Greenish-yellow gas, used in disinfectants, pools, and bleach.",
+        },
+        {
+          symbol: "Ar",
+          name: "Argon",
+          info: "Atomic Number: 18. Noble gas, used in welding, lighting, and as an inert atmosphere.",
+        },
+        {
+          symbol: "K",
+          name: "Potassium",
+          info: "Atomic Number: 19. Soft, silvery metal, important in biological systems, especially in nerve function.",
+        },
+        {
+          symbol: "Ca",
+          name: "Calcium",
+          info: "Atomic Number: 20. Essential for bones and teeth, used in cement and as a reducing agent in metallurgy.",
+        },
+        {
+          symbol: "Sc",
+          name: "Scandium",
+          info: "Atomic Number: 21. Metal, used in aerospace and in the production of aluminum alloys.",
+        },
+        {
+          symbol: "Ti",
+          name: "Titanium",
+          info: "Atomic Number: 22. Strong, corrosion-resistant metal, used in aerospace, medical devices, and jewelry.",
+        },
+        {
+          symbol: "V",
+          name: "Vanadium",
+          info: "Atomic Number: 23. Hard, silvery metal, used in steel alloys and as a catalyst in chemical reactions.",
+        },
+        {
+          symbol: "Cr",
+          name: "Chromium",
+          info: "Atomic Number: 24. Hard, shiny metal, used in stainless steel production and in chrome plating.",
+        },
+        {
+          symbol: "Mn",
+          name: "Manganese",
+          info: "Atomic Number: 25. Hard metal, used in steel production and in batteries.",
+        },
+        {
+          symbol: "Fe",
+          name: "Iron",
+          info: "Atomic Number: 26. Strong metal, essential for the production of steel and in hemoglobin in blood.",
+        },
+        {
+          symbol: "Co",
+          name: "Cobalt",
+          info: "Atomic Number: 27. Hard, lustrous metal, used in alloys, batteries, and in the production of pigments.",
+        },
+        {
+          symbol: "Ni",
+          name: "Nickel",
+          info: "Atomic Number: 28. Silvery metal, used in alloys, batteries, and as a catalyst.",
+        },
+        {
+          symbol: "Cu",
+          name: "Copper",
+          info: "Atomic Number: 29. Conductive metal, widely used in electrical wiring and plumbing.",
+        },
+        {
+          symbol: "Zn",
+          name: "Zinc",
+          info: "Atomic Number: 30. Metal, used in galvanizing steel, as a dietary supplement, and in batteries.",
+        },
+        {
+          symbol: "Ga",
+          name: "Gallium",
+          info: "Atomic Number: 31. Soft metal, used in electronics and in semiconductors.",
+        },
+        {
+          symbol: "Ge",
+          name: "Germanium",
+          info: "Atomic Number: 32. Metalloid, used in semiconductors and fiber optics.",
+        },
+        {
+          symbol: "As",
+          name: "Arsenic",
+          info: "Atomic Number: 33. Toxic metalloid, used in pesticides and wood preservation.",
+        },
+        {
+          symbol: "Se",
+          name: "Selenium",
+          info: "Atomic Number: 34. Nonmetal, used in solar cells, electronics, and as a dietary supplement.",
+        },
+        {
+          symbol: "Br",
+          name: "Bromine",
+          info: "Atomic Number: 35. Red-brown liquid, used in flame retardants, disinfectants, and in dyes.",
+        },
+        {
+          symbol: "Kr",
+          name: "Krypton",
+          info: "Atomic Number: 36. Noble gas, used in lighting and in high-performance insulating glass.",
+        },
+        {
+          symbol: "Rb",
+          name: "Rubidium",
+          info: "Atomic Number: 37. Soft, silvery metal, used in research and in atomic clocks.",
+        },
+        {
+          symbol: "Sr",
+          name: "Strontium",
+          info: "Atomic Number: 38. Soft metal, used in fireworks and in medical imaging.",
+        },
+        {
+          symbol: "Y",
+          name: "Yttrium",
+          info: "Atomic Number: 39. Metal, used in electronics, phosphors, and in medical applications.",
+        },
+        {
+          symbol: "Zr",
+          name: "Zirconium",
+          info: "Atomic Number: 40. Strong, corrosion-resistant metal, used in nuclear reactors and in dental implants.",
+        },
+        {
+          symbol: "Nb",
+          name: "Niobium",
+          info: "Atomic Number: 41. Metal, used in superconducting magnets and in the aerospace industry.",
+        },
+        {
+          symbol: "Mo",
+          name: "Molybdenum",
+          info: "Atomic Number: 42. Metal, used in steel production and in electrical contacts.",
+        },
+        {
+          symbol: "Tc",
+          name: "Technetium",
+          info: "Atomic Number: 43. Synthetic element, used in medical imaging and in nuclear reactors.",
+        },
+        {
+          symbol: "Ru",
+          name: "Ruthenium",
+          info: "Atomic Number: 44. Rare metal, used in electrical contacts and in catalytic reactions.",
+        },
+        {
+          symbol: "Rh",
+          name: "Rhodium",
+          info: "Atomic Number: 45. Silver-white metal, used in catalytic converters and in jewelry.",
+        },
+        {
+          symbol: "Pd",
+          name: "Palladium",
+          info: "Atomic Number: 46. Rare metal, used in catalytic converters and in electronics.",
+        },
+        {
+          symbol: "Ag",
+          name: "Silver",
+          info: "Atomic Number: 47. Precious metal, used in jewelry, coins, and in electronics.",
+        },
+        {
+          symbol: "Cd",
+          name: "Cadmium",
+          info: "Atomic Number: 48. Toxic metal, used in batteries, pigments, and in electroplating.",
+        },
+        {
+          symbol: "In",
+          name: "Indium",
+          info: "Atomic Number: 49. Soft, silvery metal, used in electronics and in LCD screens.",
+        },
+        {
+          symbol: "Sn",
+          name: "Tin",
+          info: "Atomic Number: 50. Metal, used in soldering and in coatings to prevent corrosion.",
+        },
+        {
+          symbol: "Sb",
+          name: "Antimony",
+          info: "Atomic Number: 51. Metalloid, used in flame retardants, alloys, and in semiconductors.",
+        },
+        {
+          symbol: "I",
+          name: "Iodine",
+          info: "Atomic Number: 53. Nonmetal, used in antiseptics and in the production of iodine compounds.",
+        },
+        {
+          symbol: "Xe",
+          name: "Xenon",
+          info: "Atomic Number: 54. Noble gas, used in lamps, anesthesia, and in medical imaging.",
+        },
+        {
+          symbol: "Cs",
+          name: "Cesium",
+          info: "Atomic Number: 55. Soft metal, used in atomic clocks and in research.",
+        },
+        {
+          symbol: "Ba",
+          name: "Barium",
+          info: "Atomic Number: 56. Soft metal, used in medical imaging and in fireworks.",
+        },
+        {
+          symbol: "La",
+          name: "Lanthanum",
+          info: "Atomic Number: 57. Rare earth metal, used in catalysts, batteries, and in medical imaging.",
+        },
+        {
+          symbol: "Ce",
+          name: "Cerium",
+          info: "Atomic Number: 58. Rare earth metal, used in catalytic converters and in glass polishing.",
+        },
+        {
+          symbol: "Pr",
+          name: "Praseodymium",
+          info: "Atomic Number: 59. Rare earth metal, used in magnets and in alloy production.",
+        },
+        {
+          symbol: "Nd",
+          name: "Neodymium",
+          info: "Atomic Number: 60. Rare earth metal, used in powerful magnets and in lasers.",
+        },
+        {
+          symbol: "Pm",
+          name: "Promethium",
+          info: "Atomic Number: 61. Radioactive metal, used in atomic batteries and in research.",
+        },
+        {
+          symbol: "Sm",
+          name: "Samarium",
+          info: "Atomic Number: 62. Rare earth metal, used in magnets and in nuclear reactors.",
+        },
+        {
+          symbol: "Eu",
+          name: "Europium",
+          info: "Atomic Number: 63. Rare earth metal, used in fluorescent lamps and in phosphorescent materials.",
+        },
+        {
+          symbol: "Gd",
+          name: "Gadolinium",
+          info: "Atomic Number: 64. Rare earth metal, used in medical imaging and in magnetic refrigeration.",
+        },
+        {
+          symbol: "Tb",
+          name: "Terbium",
+          info: "Atomic Number: 65. Rare earth metal, used in phosphors and in fluorescent lamps.",
+        },
+        {
+          symbol: "Dy",
+          name: "Dysprosium",
+          info: "Atomic Number: 66. Rare earth metal, used in magnets and in nuclear reactors.",
+        },
+        {
+          symbol: "Ho",
+          name: "Holmium",
+          info: "Atomic Number: 67. Rare earth metal, used in lasers and in magnetic materials.",
+        },
+        {
+          symbol: "Er",
+          name: "Erbium",
+          info: "Atomic Number: 68. Rare earth metal, used in fiber optic communication and in lasers.",
+        },
+        {
+          symbol: "Tm",
+          name: "Thulium",
+          info: "Atomic Number: 69. Rare earth metal, used in X-ray equipment and in lasers.",
+        },
+        {
+          symbol: "Yb",
+          name: "Ytterbium",
+          info: "Atomic Number: 70. Rare earth metal, used in lasers and in quantum computing.",
+        },
+        {
+          symbol: "Lu",
+          name: "Lutetium",
+          info: "Atomic Number: 71. Rare earth metal, used in PET scanners and in research.",
+        },
       ];
-
       let current = null;
       let interval = null;
-
       function startRandom() {
         if (interval !== null) return;
         document.getElementById("name").textContent = "";
@@ -218,35 +489,38 @@
           document.getElementById("symbol").textContent = current.symbol;
         }, 50);
       }
-
       function stopRandom() {
         clearInterval(interval);
         interval = null;
       }
-
       function showAnswer() {
         if (current) {
           document.getElementById("name").textContent = current.name;
         }
       }
-
       function resetRandom() {
         clearInterval(interval);
         interval = null;
         current = null;
         document.getElementById("symbol").textContent = "?";
         document.getElementById("name").textContent = "";
+        const infoBox = document.getElementById("element-info");
+        infoBox.innerHTML = `<h2>Element Information</h2><p>Select an element and click \"Show Information\" to see details here.</p>`;
       }
-
-      function toggleAbout() {
-        const aboutSection = document.querySelector(".about");
+      function toggleInfo() {
+        const infoSection = document.getElementById("element-info");
+        if (!current) {
+          alert("Please select an element first!");
+          return;
+        }
         if (
-          aboutSection.style.display === "none" ||
-          aboutSection.style.display === ""
+          infoSection.style.display === "none" ||
+          infoSection.style.display === ""
         ) {
-          aboutSection.style.display = "block";
+          infoSection.innerHTML = `<h2>${current.name} (${current.symbol})</h2><p>${current.info}</p>`;
+          infoSection.style.display = "block";
         } else {
-          aboutSection.style.display = "none";
+          infoSection.style.display = "none";
         }
       }
     </script>
