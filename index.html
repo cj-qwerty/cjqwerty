@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Random Element</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f4f4f9;
+        text-align: center;
+        padding: 50px;
+        color: #333;
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: #4a90e2;
+      }
+
+      #symbol {
+        font-size: 120px;
+        font-weight: bold;
+        margin: 20px;
+        color: #4a90e2;
+        transition: color 0.3s ease;
+      }
+
+      #name {
+        font-size: 32px;
+        color: #777;
+        margin-top: 10px;
+      }
+
+      button {
+        padding: 12px 25px;
+        margin: 15px;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4a90e2;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #357abd;
+      }
+
+      button:active {
+        background-color: #2e6b94;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .buttons-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .reset-button {
+        background-color: #e94e77;
+      }
+
+      .reset-button:hover {
+        background-color: #c93f63;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Random Chemical Element</h1>
+      <div id="symbol">?</div>
+      <div id="name"></div>
+
+      <div class="buttons-container">
+        <button onclick="startRandom()">▶️ Start</button>
+        <button onclick="stopRandom()">⏹️ Stop</button>
+        <button onclick="showAnswer()">❓ Reveal</button>
+        <button class="reset-button" onclick="resetRandom()">🔄 Reset</button>
+      </div>
+    </div>
+
+    <script>
+      const elements = [
+        //อย่าโกง นะจะ
+        { symbol: "H", name: "Hydrogen" },
+        { symbol: "He", name: "Helium" },
+        { symbol: "Li", name: "Lithium" },
+        { symbol: "Be", name: "Beryllium" },
+        { symbol: "B", name: "Boron" },
+        { symbol: "C", name: "Carbon" },
+        { symbol: "N", name: "Nitrogen" },
+        { symbol: "O", name: "Oxygen" },
+        { symbol: "F", name: "Fluorine" },
+        { symbol: "Ne", name: "Neon" },
+        { symbol: "Na", name: "Sodium" },
+        { symbol: "Mg", name: "Magnesium" },
+        { symbol: "Al", name: "Aluminium" },
+        { symbol: "Si", name: "Silicon" },
+        { symbol: "P", name: "Phosphorus" },
+        { symbol: "S", name: "Sulfur" },
+        { symbol: "Cl", name: "Chlorine" },
+        { symbol: "Ar", name: "Argon" },
+        { symbol: "K", name: "Potassium" },
+        { symbol: "Ca", name: "Calcium" },
+        { symbol: "Sc", name: "Scandium" },
+        { symbol: "Ti", name: "Titanium" },
+        { symbol: "V", name: "Vanadium" },
+        { symbol: "Cr", name: "Chromium" },
+        { symbol: "Mn", name: "Manganese" },
+        { symbol: "Fe", name: "Iron" },
+        { symbol: "Co", name: "Cobalt" },
+        { symbol: "Ni", name: "Nickel" },
+        { symbol: "Cu", name: "Copper" },
+        { symbol: "Zn", name: "Zinc" },
+        { symbol: "Ga", name: "Gallium" },
+        { symbol: "Ge", name: "Germanium" },
+        { symbol: "As", name: "Arsenic" },
+        { symbol: "Se", name: "Selenium" },
+        { symbol: "Br", name: "Bromine" },
+        { symbol: "Kr", name: "Krypton" },
+        { symbol: "Rb", name: "Rubidium" },
+        { symbol: "Sr", name: "Strontium" },
+        { symbol: "In", name: "Indium" },
+        { symbol: "Sn", name: "Tin" },
+        { symbol: "Sb", name: "Antimony" },
+        { symbol: "Te", name: "Tellurium" },
+        { symbol: "I", name: "Iodine" },
+        { symbol: "Xe", name: "Xenon" },
+      ];
+
+      let current = null;
+      let interval = null;
+
+      function startRandom() {
+        if (interval !== null) return;
+        document.getElementById("name").textContent = "";
+        interval = setInterval(() => {
+          current = elements[Math.floor(Math.random() * elements.length)];
+          document.getElementById("symbol").textContent = current.symbol;
+        }, 50);
+      }
+
+      function stopRandom() {
+        clearInterval(interval);
+        interval = null;
+      }
+
+      function showAnswer() {
+        if (current) {
+          document.getElementById("name").textContent = current.name;
+        }
+      }
+
+      function resetRandom() {
+        clearInterval(interval);
+        interval = null;
+        current = null;
+        document.getElementById("symbol").textContent = "?";
+        document.getElementById("name").textContent = "";
+      }
+    </script>
+  </body>
+</html>
