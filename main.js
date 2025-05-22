@@ -11,6 +11,10 @@ async function startRandom() {
   if (interval !== null) return;
   if (elements.length === 0) await loadElements();
   document.getElementById("name").textContent = "";
+  // reset element-info ทุกครั้งที่เริ่มสุ่ม
+  const infoSection = document.getElementById("element-info");
+  infoSection.innerHTML = `<h2>Element Information</h2><p>Select an element and click "Show Information" to see details here.</p>`;
+  infoSection.style.display = "block";
   interval = setInterval(() => {
     current = elements[Math.floor(Math.random() * elements.length)];
     document.getElementById("symbol").textContent = current.symbol;
@@ -20,9 +24,12 @@ async function startRandom() {
 function stopRandom() {
   clearInterval(interval);
   interval = null;
+  // ไม่ต้องแสดง info อัตโนมัติ ให้ผู้ใช้กด Show Information เอง
 }
 
 function showAnswer() {
+  // ไม่อนุญาตให้ Reveal ระหว่างสุ่ม
+  if (interval !== null) return;
   if (current) {
     document.getElementById("name").textContent = current.name;
   }
@@ -40,6 +47,8 @@ function resetRandom() {
 }
 
 function toggleInfo() {
+  // ไม่อนุญาตให้ Show Information ระหว่างสุ่ม
+  if (interval !== null) return;
   const infoSection = document.getElementById("element-info");
   if (!current) {
     alert("Please select an element first!");
