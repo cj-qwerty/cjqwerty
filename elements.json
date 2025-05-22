@@ -1,0 +1,152 @@
+[
+  {
+    "symbol": "H",
+    "name": "Hydrogen",
+    "info": "Atomic Number: 1. Lightest element, colorless gas, used in rocket fuel and the Sun's fusion."
+  },
+  {
+    "symbol": "He",
+    "name": "Helium",
+    "info": "Atomic Number: 2. Noble gas, inert, used in balloons and cooling superconducting magnets."
+  },
+  {
+    "symbol": "Li",
+    "name": "Lithium",
+    "info": "Atomic Number: 3. Soft metal, used in rechargeable batteries."
+  },
+  {
+    "symbol": "Be",
+    "name": "Beryllium",
+    "info": "Atomic Number: 4. Strong, lightweight metal, used in aerospace and military applications."
+  },
+  {
+    "symbol": "B",
+    "name": "Boron",
+    "info": "Atomic Number: 5. Metalloid, used in glass and ceramics, enhances strength and heat resistance."
+  },
+  {
+    "symbol": "C",
+    "name": "Carbon",
+    "info": "Atomic Number: 6. Fundamental building block of life, found in diamonds and graphite."
+  },
+  {
+    "symbol": "N",
+    "name": "Nitrogen",
+    "info": "Atomic Number: 7. Colorless, odorless gas, makes up 78% of Earth's atmosphere."
+  },
+  {
+    "symbol": "O",
+    "name": "Oxygen",
+    "info": "Atomic Number: 8. Essential for respiration, reactive element, supports combustion."
+  },
+  {
+    "symbol": "F",
+    "name": "Fluorine",
+    "info": "Atomic Number: 9. Highly reactive, used in toothpaste and Teflon."
+  },
+  {
+    "symbol": "Ne",
+    "name": "Neon",
+    "info": "Atomic Number: 10. Noble gas, emits red-orange glow, used in neon signs."
+  },
+  {
+    "symbol": "Na",
+    "name": "Sodium",
+    "info": "Atomic Number: 11. Soft, silvery metal, highly reactive with water, used in table salt."
+  },
+  {
+    "symbol": "Mg",
+    "name": "Magnesium",
+    "info": "Atomic Number: 12. Lightweight metal, used in alloys and fireworks."
+  },
+  {
+    "symbol": "Al",
+    "name": "Aluminum",
+    "info": "Atomic Number: 13. Lightweight, corrosion-resistant metal, used in cans and aircraft."
+  },
+  {
+    "symbol": "Si",
+    "name": "Silicon",
+    "info": "Atomic Number: 14. Semiconductor, used in electronics and solar cells."
+  },
+  {
+    "symbol": "P",
+    "name": "Phosphorus",
+    "info": "Atomic Number: 15. Essential for life, used in fertilizers and DNA."
+  },
+  {
+    "symbol": "S",
+    "name": "Sulfur",
+    "info": "Atomic Number: 16. Yellow solid, used in fertilizers and gunpowder."
+  },
+  {
+    "symbol": "Cl",
+    "name": "Chlorine",
+    "info": "Atomic Number: 17. Greenish-yellow gas, used in disinfectants and bleach."
+  },
+  {
+    "symbol": "Ar",
+    "name": "Argon",
+    "info": "Atomic Number: 18. Noble gas, inert, used in light bulbs and welding."
+  },
+  {
+    "symbol": "K",
+    "name": "Potassium",
+    "info": "Atomic Number: 19. Soft, silvery metal, essential for life, used in fertilizers."
+  },
+  {
+    "symbol": "Ca",
+    "name": "Calcium",
+    "info": "Atomic Number: 20. Essential for bones and teeth, used in cement and lime."
+  },
+  {
+    "symbol": "Fe",
+    "name": "Iron",
+    "info": "Atomic Number: 26. Used in construction, machinery, and is essential for blood (hemoglobin)."
+  },
+  {
+    "symbol": "Cu",
+    "name": "Copper",
+    "info": "Atomic Number: 29. Excellent conductor, used in electrical wiring and coins."
+  },
+  {
+    "symbol": "Zn",
+    "name": "Zinc",
+    "info": "Atomic Number: 30. Used for galvanizing iron, in batteries, and as a dietary supplement."
+  },
+  {
+    "symbol": "Ag",
+    "name": "Silver",
+    "info": "Atomic Number: 47. Precious metal, used in jewelry, coins, and electronics."
+  },
+  {
+    "symbol": "Au",
+    "name": "Gold",
+    "info": "Atomic Number: 79. Precious metal, used in jewelry, electronics, and as a standard for currency."
+  },
+  {
+    "symbol": "Hg",
+    "name": "Mercury",
+    "info": "Atomic Number: 80. Only liquid metal at room temperature, used in thermometers and fluorescent lamps."
+  },
+  {
+    "symbol": "Cr",
+    "name": "Chromium",
+    "info": "Atomic Number: 24. Used in stainless steel and chrome plating."
+  },
+  {
+    "symbol": "Mn",
+    "name": "Manganese",
+    "info": "Atomic Number: 25. Used in steel production and batteries."
+  },
+  {
+    "symbol": "Ni",
+    "name": "Nickel",
+    "info": "Atomic Number: 28. Used in coins, stainless steel, and batteries."
+  },
+  {
+    "symbol": "Co",
+    "name": "Cobalt",
+    "info": "Atomic Number: 27. Used in magnets, batteries, and blue pigments."
+  }
+]
