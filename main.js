@@ -11,10 +11,10 @@ async function startRandom() {
   if (interval !== null) return;
   if (elements.length === 0) await loadElements();
   document.getElementById("name").textContent = "";
-  // reset element-info ทุกครั้งที่เริ่มสุ่ม
+  // ซ่อน element-info ทุกครั้งที่เริ่มสุ่ม
   const infoSection = document.getElementById("element-info");
-  infoSection.innerHTML = `<h2>Element Information</h2><p>Select an element and click "Show Information" to see details here.</p>`;
-  infoSection.style.display = "block";
+  infoSection.innerHTML = "";
+  infoSection.style.display = "none";
   interval = setInterval(() => {
     current = elements[Math.floor(Math.random() * elements.length)];
     document.getElementById("symbol").textContent = current.symbol;
@@ -42,7 +42,7 @@ function resetRandom() {
   document.getElementById("symbol").textContent = "?";
   document.getElementById("name").textContent = "";
   const infoBox = document.getElementById("element-info");
-  infoBox.innerHTML = `<h2>Element Information</h2><p>Select an element and click "Show Information" to see details here.</p>`;
+  infoBox.innerHTML = "";
   infoBox.style.display = "none";
 }
 
@@ -51,15 +51,21 @@ function toggleInfo() {
   if (interval !== null) return;
   const infoSection = document.getElementById("element-info");
   if (!current) {
-    alert("Please select an element first!");
+    infoSection.innerHTML = "";
+    infoSection.style.display = "none";
     return;
   }
   if (
     infoSection.style.display === "none" ||
     infoSection.style.display === ""
   ) {
-    infoSection.innerHTML = `<h2>${current.name} (${current.symbol})</h2><p>${current.info}</p>`;
-    infoSection.style.display = "block";
+    if (current.info) {
+      infoSection.innerHTML = `<h2>${current.name} (${current.symbol})</h2><p>${current.info}</p>`;
+      infoSection.style.display = "block";
+    } else {
+      infoSection.innerHTML = "";
+      infoSection.style.display = "none";
+    }
   } else {
     infoSection.style.display = "none";
   }

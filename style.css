@@ -5,6 +5,7 @@ body {
   padding: 50px;
   color: #333;
   margin: 0;
+  padding-top: 62px; /* เพิ่ม padding-top เพื่อไม่ให้เนื้อหาถูก taskbar ทับ */
 }
 h1 {
   font-size: 36px;
@@ -77,4 +78,35 @@ button:active {
 }
 .ads-container {
   margin-top: 50px;
+}
+.taskbar {
+  width: 100vw;
+  background: #222d3b;
+  color: #fff;
+  padding: 16px 0;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  margin-bottom: 30px;
+  margin-top: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 48px; /* ระยะห่างเท่ากันระหว่างแต่ละแถบ */
+}
+.taskbar-title,
+.taskbar-link {
+  margin: 0;
+  padding: 0 12px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.taskbar-link:hover {
+  color: #4a90e2;
 }
