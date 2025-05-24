@@ -166,6 +166,14 @@ h1.table-title {
   position: relative;
 }
 
+/* เพิ่มสีพิเศษให้ Hydrogen */
+.periodic-element[symbol="H"],
+.periodic-element.hydrogen {
+  background: #ff4d4d !important; /* สีแดงสด */
+  color: #fff !important;
+  border: 2px solid #b30000 !important;
+}
+
 /* Responsive: ตารางธาตุในมือถือ */
 @media (max-width: 700px) {
   .periodic-table {
