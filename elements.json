@@ -1,322 +1,152 @@
 [
-  { "symbol": "H", "name": "Hydrogen", "info": "...", "category": "nonmetal" },
-  { "symbol": "He", "name": "Helium", "info": "...", "category": "noble-gas" },
+  {
+    "symbol": "H",
+    "name": "Hydrogen",
+    "info": "Atomic Number: 1. Lightest element, colorless gas, used in rocket fuel and the Sun's fusion."
+  },
+  {
+    "symbol": "He",
+    "name": "Helium",
+    "info": "Atomic Number: 2. Noble gas, inert, used in balloons and cooling superconducting magnets."
+  },
   {
     "symbol": "Li",
     "name": "Lithium",
-    "info": "...",
-    "category": "alkali-metal"
+    "info": "Atomic Number: 3. Soft metal, used in rechargeable batteries."
   },
   {
     "symbol": "Be",
     "name": "Beryllium",
-    "info": "...",
-    "category": "alkaline-earth-metal"
+    "info": "Atomic Number: 4. Strong, lightweight metal, used in aerospace and military applications."
   },
-  { "symbol": "B", "name": "Boron", "info": "...", "category": "metalloid" },
-  { "symbol": "C", "name": "Carbon", "info": "...", "category": "nonmetal" },
-  { "symbol": "N", "name": "Nitrogen", "info": "...", "category": "nonmetal" },
-  { "symbol": "O", "name": "Oxygen", "info": "...", "category": "nonmetal" },
-  { "symbol": "F", "name": "Fluorine", "info": "...", "category": "halogen" },
-  { "symbol": "Ne", "name": "Neon", "info": "...", "category": "noble-gas" },
+  {
+    "symbol": "B",
+    "name": "Boron",
+    "info": "Atomic Number: 5. Metalloid, used in glass and ceramics, enhances strength and heat resistance."
+  },
+  {
+    "symbol": "C",
+    "name": "Carbon",
+    "info": "Atomic Number: 6. Fundamental building block of life, found in diamonds and graphite."
+  },
+  {
+    "symbol": "N",
+    "name": "Nitrogen",
+    "info": "Atomic Number: 7. Colorless, odorless gas, makes up 78% of Earth's atmosphere."
+  },
+  {
+    "symbol": "O",
+    "name": "Oxygen",
+    "info": "Atomic Number: 8. Essential for respiration, reactive element, supports combustion."
+  },
+  {
+    "symbol": "F",
+    "name": "Fluorine",
+    "info": "Atomic Number: 9. Highly reactive, used in toothpaste and Teflon."
+  },
+  {
+    "symbol": "Ne",
+    "name": "Neon",
+    "info": "Atomic Number: 10. Noble gas, emits red-orange glow, used in neon signs."
+  },
   {
     "symbol": "Na",
     "name": "Sodium",
-    "info": "...",
-    "category": "alkali-metal"
+    "info": "Atomic Number: 11. Soft, silvery metal, highly reactive with water, used in table salt."
   },
   {
     "symbol": "Mg",
     "name": "Magnesium",
-    "info": "...",
-    "category": "alkaline-earth-metal"
+    "info": "Atomic Number: 12. Lightweight metal, used in alloys and fireworks."
   },
   {
     "symbol": "Al",
     "name": "Aluminum",
-    "info": "...",
-    "category": "post-transition-metal"
+    "info": "Atomic Number: 13. Lightweight, corrosion-resistant metal, used in cans and aircraft."
   },
-  { "symbol": "Si", "name": "Silicon", "info": "...", "category": "metalloid" },
+  {
+    "symbol": "Si",
+    "name": "Silicon",
+    "info": "Atomic Number: 14. Semiconductor, used in electronics and solar cells."
+  },
   {
     "symbol": "P",
     "name": "Phosphorus",
-    "info": "...",
-    "category": "nonmetal"
+    "info": "Atomic Number: 15. Essential for life, used in fertilizers and DNA."
   },
-  { "symbol": "S", "name": "Sulfur", "info": "...", "category": "nonmetal" },
-  { "symbol": "Cl", "name": "Chlorine", "info": "...", "category": "halogen" },
-  { "symbol": "Ar", "name": "Argon", "info": "...", "category": "noble-gas" },
+  {
+    "symbol": "S",
+    "name": "Sulfur",
+    "info": "Atomic Number: 16. Yellow solid, used in fertilizers and gunpowder."
+  },
+  {
+    "symbol": "Cl",
+    "name": "Chlorine",
+    "info": "Atomic Number: 17. Greenish-yellow gas, used in disinfectants and bleach."
+  },
+  {
+    "symbol": "Ar",
+    "name": "Argon",
+    "info": "Atomic Number: 18. Noble gas, inert, used in light bulbs and welding."
+  },
   {
     "symbol": "K",
     "name": "Potassium",
-    "info": "...",
-    "category": "alkali-metal"
+    "info": "Atomic Number: 19. Soft, silvery metal, essential for life, used in fertilizers."
   },
   {
     "symbol": "Ca",
     "name": "Calcium",
-    "info": "...",
-    "category": "alkaline-earth-metal"
-  },
-  {
-    "symbol": "Sc",
-    "name": "Scandium",
-    "info": "...",
-    "category": "transition-metal"
-  },
-  {
-    "symbol": "Ti",
-    "name": "Titanium",
-    "info": "...",
-    "category": "transition-metal"
-  },
-  {
-    "symbol": "V",
-    "name": "Vanadium",
-    "info": "...",
-    "category": "transition-metal"
-  },
-  {
-    "symbol": "Cr",
-    "name": "Chromium",
-    "info": "...",
-    "category": "transition-metal"
-  },
-  {
-    "symbol": "Mn",
-    "name": "Manganese",
-    "info": "...",
-    "category": "transition-metal"
+    "info": "Atomic Number: 20. Essential for bones and teeth, used in cement and lime."
   },
   {
     "symbol": "Fe",
     "name": "Iron",
-    "info": "...",
-    "category": "transition-metal"
-  },
-  {
-    "symbol": "Co",
-    "name": "Cobalt",
-    "info": "...",
-    "category": "transition-metal"
-  },
-  {
-    "symbol": "Ni",
-    "name": "Nickel",
-    "info": "...",
-    "category": "transition-metal"
+    "info": "Atomic Number: 26. Used in construction, machinery, and is essential for blood (hemoglobin)."
   },
   {
     "symbol": "Cu",
     "name": "Copper",
-    "info": "...",
-    "category": "transition-metal"
+    "info": "Atomic Number: 29. Excellent conductor, used in electrical wiring and coins."
   },
   {
     "symbol": "Zn",
     "name": "Zinc",
-    "info": "...",
-    "category": "post-transition-metal"
-  },
-  {
-    "symbol": "Ga",
-    "name": "Gallium",
-    "info": "...",
-    "category": "post-transition-metal"
-  },
-  {
-    "symbol": "Ge",
-    "name": "Germanium",
-    "info": "...",
-    "category": "metalloid"
-  },
-  { "symbol": "As", "name": "Arsenic", "info": "...", "category": "metalloid" },
-  { "symbol": "Se", "name": "Selenium", "info": "...", "category": "nonmetal" },
-  { "symbol": "Br", "name": "Bromine", "info": "...", "category": "halogen" },
-  { "symbol": "Kr", "name": "Krypton", "info": "...", "category": "noble-gas" },
-  {
-    "symbol": "Rb",
-    "name": "Rubidium",
-    "info": "...",
-    "category": "alkali-metal"
-  },
-  {
-    "symbol": "Sr",
-    "name": "Strontium",
-    "info": "...",
-    "category": "alkaline-earth-metal"
-  },
-  {
-    "symbol": "Y",
-    "name": "Yttrium",
-    "info": "...",
-    "category": "transition-metal"
-  },
-  {
-    "symbol": "Zr",
-    "name": "Zirconium",
-    "info": "...",
-    "category": "transition-metal"
-  },
-  {
-    "symbol": "Nb",
-    "name": "Niobium",
-    "info": "...",
-    "category": "transition-metal"
-  },
-  {
-    "symbol": "Mo",
-    "name": "Molybdenum",
-    "info": "...",
-    "category": "transition-metal"
-  },
-  {
-    "symbol": "Tc",
-    "name": "Technetium",
-    "info": "...",
-    "category": "transition-metal"
-  },
-  {
-    "symbol": "Ru",
-    "name": "Ruthenium",
-    "info": "...",
-    "category": "transition-metal"
-  },
-  {
-    "symbol": "Rh",
-    "name": "Rhodium",
-    "info": "...",
-    "category": "transition-metal"
-  },
-  {
-    "symbol": "Pd",
-    "name": "Palladium",
-    "info": "...",
-    "category": "transition-metal"
+    "info": "Atomic Number: 30. Used for galvanizing iron, in batteries, and as a dietary supplement."
   },
   {
     "symbol": "Ag",
     "name": "Silver",
-    "info": "...",
-    "category": "transition-metal"
+    "info": "Atomic Number: 47. Precious metal, used in jewelry, coins, and electronics."
   },
   {
-    "symbol": "Cd",
-    "name": "Cadmium",
-    "info": "...",
-    "category": "post-transition-metal"
+    "symbol": "Au",
+    "name": "Gold",
+    "info": "Atomic Number: 79. Precious metal, used in jewelry, electronics, and as a standard for currency."
   },
   {
-    "symbol": "In",
-    "name": "Indium",
-    "info": "...",
-    "category": "post-transition-metal"
+    "symbol": "Hg",
+    "name": "Mercury",
+    "info": "Atomic Number: 80. Only liquid metal at room temperature, used in thermometers and fluorescent lamps."
   },
   {
-    "symbol": "Sn",
-    "name": "Tin",
-    "info": "...",
-    "category": "post-transition-metal"
+    "symbol": "Cr",
+    "name": "Chromium",
+    "info": "Atomic Number: 24. Used in stainless steel and chrome plating."
   },
   {
-    "symbol": "Sb",
-    "name": "Antimony",
-    "info": "...",
-    "category": "metalloid"
-  },
-  { "symbol": "I", "name": "Iodine", "info": "...", "category": "halogen" },
-  { "symbol": "Xe", "name": "Xenon", "info": "...", "category": "noble-gas" },
-  {
-    "symbol": "Cs",
-    "name": "Cesium",
-    "info": "...",
-    "category": "alkali-metal"
+    "symbol": "Mn",
+    "name": "Manganese",
+    "info": "Atomic Number: 25. Used in steel production and batteries."
   },
   {
-    "symbol": "Ba",
-    "name": "Barium",
-    "info": "...",
-    "category": "alkaline-earth-metal"
+    "symbol": "Ni",
+    "name": "Nickel",
+    "info": "Atomic Number: 28. Used in coins, stainless steel, and batteries."
   },
   {
-    "symbol": "La",
-    "name": "Lanthanum",
-    "info": "...",
-    "category": "lanthanide"
-  },
-  { "symbol": "Ce", "name": "Cerium", "info": "...", "category": "lanthanide" },
-  {
-    "symbol": "Pr",
-    "name": "Praseodymium",
-    "info": "...",
-    "category": "lanthanide"
-  },
-  {
-    "symbol": "Nd",
-    "name": "Neodymium",
-    "info": "...",
-    "category": "lanthanide"
-  },
-  {
-    "symbol": "Pm",
-    "name": "Promethium",
-    "info": "...",
-    "category": "lanthanide"
-  },
-  {
-    "symbol": "Sm",
-    "name": "Samarium",
-    "info": "...",
-    "category": "lanthanide"
-  },
-  {
-    "symbol": "Eu",
-    "name": "Europium",
-    "info": "...",
-    "category": "lanthanide"
-  },
-  {
-    "symbol": "Gd",
-    "name": "Gadolinium",
-    "info": "...",
-    "category": "lanthanide"
-  },
-  {
-    "symbol": "Tb",
-    "name": "Terbium",
-    "info": "...",
-    "category": "lanthanide"
-  },
-  {
-    "symbol": "Dy",
-    "name": "Dysprosium",
-    "info": "...",
-    "category": "lanthanide"
-  },
-  {
-    "symbol": "Ho",
-    "name": "Holmium",
-    "info": "...",
-    "category": "lanthanide"
-  },
-  { "symbol": "Er", "name": "Erbium", "info": "...", "category": "lanthanide" },
-  {
-    "symbol": "Tm",
-    "name": "Thulium",
-    "info": "...",
-    "category": "lanthanide"
-  },
-  {
-    "symbol": "Yb",
-    "name": "Ytterbium",
-    "info": "...",
-    "category": "lanthanide"
-  },
-  {
-    "symbol": "Lu",
-    "name": "Lutetium",
-    "info": "...",
-    "category": "lanthanide"
+    "symbol": "Co",
+    "name": "Cobalt",
+    "info": "Atomic Number: 27. Used in magnets, batteries, and blue pigments."
   }
 ]
