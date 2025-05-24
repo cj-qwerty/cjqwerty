@@ -5,7 +5,8 @@
     "number": 1,
     "group": 1,
     "period": 1,
-    "category": "nonmetal"
+    "category": "nonmetal",
+    "atomic_mass": 1.008
   },
   {
     "symbol": "He",
@@ -13,7 +14,8 @@
     "number": 2,
     "group": 18,
     "period": 1,
-    "category": "noble-gas"
+    "category": "noble-gas",
+    "atomic_mass": 4.0026
   },
   {
     "symbol": "Li",
@@ -21,7 +23,8 @@
     "number": 3,
     "group": 1,
     "period": 2,
-    "category": "alkali-metal"
+    "category": "alkali-metal",
+    "atomic_mass": 6.94
   },
   {
     "symbol": "Be",
@@ -29,7 +32,8 @@
     "number": 4,
     "group": 2,
     "period": 2,
-    "category": "alkaline-earth-metal"
+    "category": "alkaline-earth-metal",
+    "atomic_mass": 9.0122
   },
   {
     "symbol": "B",
@@ -37,7 +41,8 @@
     "number": 5,
     "group": 13,
     "period": 2,
-    "category": "metalloid"
+    "category": "metalloid",
+    "atomic_mass": 10.81
   },
   {
     "symbol": "C",
@@ -45,7 +50,8 @@
     "number": 6,
     "group": 14,
     "period": 2,
-    "category": "nonmetal"
+    "category": "nonmetal",
+    "atomic_mass": 12.011
   },
   {
     "symbol": "N",
@@ -53,7 +59,8 @@
     "number": 7,
     "group": 15,
     "period": 2,
-    "category": "nonmetal"
+    "category": "nonmetal",
+    "atomic_mass": 14.007
   },
   {
     "symbol": "O",
@@ -61,7 +68,8 @@
     "number": 8,
     "group": 16,
     "period": 2,
-    "category": "nonmetal"
+    "category": "nonmetal",
+    "atomic_mass": 15.999
   },
   {
     "symbol": "F",
@@ -69,7 +77,8 @@
     "number": 9,
     "group": 17,
     "period": 2,
-    "category": "halogen"
+    "category": "halogen",
+    "atomic_mass": 18.998
   },
   {
     "symbol": "Ne",
@@ -77,7 +86,8 @@
     "number": 10,
     "group": 18,
     "period": 2,
-    "category": "noble-gas"
+    "category": "noble-gas",
+    "atomic_mass": 20.18
   },
   {
     "symbol": "Na",
@@ -85,7 +95,8 @@
     "number": 11,
     "group": 1,
     "period": 3,
-    "category": "alkali-metal"
+    "category": "alkali-metal",
+    "atomic_mass": 22.99
   },
   {
     "symbol": "Mg",
@@ -93,7 +104,8 @@
     "number": 12,
     "group": 2,
     "period": 3,
-    "category": "alkaline-earth-metal"
+    "category": "alkaline-earth-metal",
+    "atomic_mass": 24.305
   },
   {
     "symbol": "Al",
@@ -101,7 +113,8 @@
     "number": 13,
     "group": 13,
     "period": 3,
-    "category": "post-transition-metal"
+    "category": "post-transition-metal",
+    "atomic_mass": 26.982
   },
   {
     "symbol": "Si",
@@ -109,7 +122,8 @@
     "number": 14,
     "group": 14,
     "period": 3,
-    "category": "metalloid"
+    "category": "metalloid",
+    "atomic_mass": 28.085
   },
   {
     "symbol": "P",
@@ -117,7 +131,8 @@
     "number": 15,
     "group": 15,
     "period": 3,
-    "category": "nonmetal"
+    "category": "nonmetal",
+    "atomic_mass": 30.974
   },
   {
     "symbol": "S",
@@ -125,7 +140,8 @@
     "number": 16,
     "group": 16,
     "period": 3,
-    "category": "nonmetal"
+    "category": "nonmetal",
+    "atomic_mass": 32.06
   },
   {
     "symbol": "Cl",
@@ -133,7 +149,8 @@
     "number": 17,
     "group": 17,
     "period": 3,
-    "category": "halogen"
+    "category": "halogen",
+    "atomic_mass": 35.45
   },
   {
     "symbol": "Ar",
@@ -141,7 +158,8 @@
     "number": 18,
     "group": 18,
     "period": 3,
-    "category": "noble-gas"
+    "category": "noble-gas",
+    "atomic_mass": 39.948
   },
   {
     "symbol": "K",
@@ -149,7 +167,8 @@
     "number": 19,
     "group": 1,
     "period": 4,
-    "category": "alkali-metal"
+    "category": "alkali-metal",
+    "atomic_mass": 39.098
   },
   {
     "symbol": "Ca",
@@ -157,7 +176,8 @@
     "number": 20,
     "group": 2,
     "period": 4,
-    "category": "alkaline-earth-metal"
+    "category": "alkaline-earth-metal",
+    "atomic_mass": 40.078
   },
   {
     "symbol": "Sc",
@@ -165,7 +185,8 @@
     "number": 21,
     "group": 3,
     "period": 4,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 44.956
   },
   {
     "symbol": "Ti",
@@ -173,7 +194,8 @@
     "number": 22,
     "group": 4,
     "period": 4,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 47.867
   },
   {
     "symbol": "V",
@@ -181,7 +203,8 @@
     "number": 23,
     "group": 5,
     "period": 4,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 50.942
   },
   {
     "symbol": "Cr",
@@ -189,7 +212,8 @@
     "number": 24,
     "group": 6,
     "period": 4,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 51.996
   },
   {
     "symbol": "Mn",
@@ -197,7 +221,8 @@
     "number": 25,
     "group": 7,
     "period": 4,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 54.938
   },
   {
     "symbol": "Fe",
@@ -205,7 +230,8 @@
     "number": 26,
     "group": 8,
     "period": 4,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 55.845
   },
   {
     "symbol": "Co",
@@ -213,7 +239,8 @@
     "number": 27,
     "group": 9,
     "period": 4,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 58.933
   },
   {
     "symbol": "Ni",
@@ -221,7 +248,8 @@
     "number": 28,
     "group": 10,
     "period": 4,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 58.693
   },
   {
     "symbol": "Cu",
@@ -229,7 +257,8 @@
     "number": 29,
     "group": 11,
     "period": 4,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 63.546
   },
   {
     "symbol": "Zn",
@@ -237,7 +266,8 @@
     "number": 30,
     "group": 12,
     "period": 4,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 65.38
   },
   {
     "symbol": "Ga",
@@ -245,7 +275,8 @@
     "number": 31,
     "group": 13,
     "period": 4,
-    "category": "post-transition-metal"
+    "category": "post-transition-metal",
+    "atomic_mass": 69.723
   },
   {
     "symbol": "Ge",
@@ -253,7 +284,8 @@
     "number": 32,
     "group": 14,
     "period": 4,
-    "category": "metalloid"
+    "category": "metalloid",
+    "atomic_mass": 72.63
   },
   {
     "symbol": "As",
@@ -261,7 +293,8 @@
     "number": 33,
     "group": 15,
     "period": 4,
-    "category": "metalloid"
+    "category": "metalloid",
+    "atomic_mass": 74.922
   },
   {
     "symbol": "Se",
@@ -269,7 +302,8 @@
     "number": 34,
     "group": 16,
     "period": 4,
-    "category": "nonmetal"
+    "category": "nonmetal",
+    "atomic_mass": 78.971
   },
   {
     "symbol": "Br",
@@ -277,7 +311,8 @@
     "number": 35,
     "group": 17,
     "period": 4,
-    "category": "halogen"
+    "category": "halogen",
+    "atomic_mass": 79.904
   },
   {
     "symbol": "Kr",
@@ -285,7 +320,8 @@
     "number": 36,
     "group": 18,
     "period": 4,
-    "category": "noble-gas"
+    "category": "noble-gas",
+    "atomic_mass": 83.798
   },
   {
     "symbol": "Rb",
@@ -293,7 +329,8 @@
     "number": 37,
     "group": 1,
     "period": 5,
-    "category": "alkali-metal"
+    "category": "alkali-metal",
+    "atomic_mass": 85.468
   },
   {
     "symbol": "Sr",
@@ -301,7 +338,8 @@
     "number": 38,
     "group": 2,
     "period": 5,
-    "category": "alkaline-earth-metal"
+    "category": "alkaline-earth-metal",
+    "atomic_mass": 87.62
   },
   {
     "symbol": "Y",
@@ -309,7 +347,8 @@
     "number": 39,
     "group": 3,
     "period": 5,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 88.906
   },
   {
     "symbol": "Zr",
@@ -317,7 +356,8 @@
     "number": 40,
     "group": 4,
     "period": 5,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 91.224
   },
   {
     "symbol": "Nb",
@@ -325,7 +365,8 @@
     "number": 41,
     "group": 5,
     "period": 5,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 92.906
   },
   {
     "symbol": "Mo",
@@ -333,7 +374,8 @@
     "number": 42,
     "group": 6,
     "period": 5,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 95.95
   },
   {
     "symbol": "Tc",
@@ -341,7 +383,8 @@
     "number": 43,
     "group": 7,
     "period": 5,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 98
   },
   {
     "symbol": "Ru",
@@ -349,7 +392,8 @@
     "number": 44,
     "group": 8,
     "period": 5,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 101.07
   },
   {
     "symbol": "Rh",
@@ -357,7 +401,8 @@
     "number": 45,
     "group": 9,
     "period": 5,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 102.91
   },
   {
     "symbol": "Pd",
@@ -365,7 +410,8 @@
     "number": 46,
     "group": 10,
     "period": 5,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 106.42
   },
   {
     "symbol": "Ag",
@@ -373,7 +419,8 @@
     "number": 47,
     "group": 11,
     "period": 5,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 107.87
   },
   {
     "symbol": "Cd",
@@ -381,7 +428,8 @@
     "number": 48,
     "group": 12,
     "period": 5,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 112.41
   },
   {
     "symbol": "In",
@@ -389,7 +437,8 @@
     "number": 49,
     "group": 13,
     "period": 5,
-    "category": "post-transition-metal"
+    "category": "post-transition-metal",
+    "atomic_mass": 114.82
   },
   {
     "symbol": "Sn",
@@ -397,7 +446,8 @@
     "number": 50,
     "group": 14,
     "period": 5,
-    "category": "post-transition-metal"
+    "category": "post-transition-metal",
+    "atomic_mass": 118.71
   },
   {
     "symbol": "Sb",
@@ -405,7 +455,8 @@
     "number": 51,
     "group": 15,
     "period": 5,
-    "category": "metalloid"
+    "category": "metalloid",
+    "atomic_mass": 121.76
   },
   {
     "symbol": "Te",
@@ -413,7 +464,8 @@
     "number": 52,
     "group": 16,
     "period": 5,
-    "category": "metalloid"
+    "category": "metalloid",
+    "atomic_mass": 127.6
   },
   {
     "symbol": "I",
@@ -421,7 +473,8 @@
     "number": 53,
     "group": 17,
     "period": 5,
-    "category": "halogen"
+    "category": "halogen",
+    "atomic_mass": 126.9
   },
   {
     "symbol": "Xe",
@@ -429,7 +482,8 @@
     "number": 54,
     "group": 18,
     "period": 5,
-    "category": "noble-gas"
+    "category": "noble-gas",
+    "atomic_mass": 131.29
   },
   {
     "symbol": "Cs",
@@ -437,7 +491,8 @@
     "number": 55,
     "group": 1,
     "period": 6,
-    "category": "alkali-metal"
+    "category": "alkali-metal",
+    "atomic_mass": 132.91
   },
   {
     "symbol": "Ba",
@@ -445,7 +500,8 @@
     "number": 56,
     "group": 2,
     "period": 6,
-    "category": "alkaline-earth-metal"
+    "category": "alkaline-earth-metal",
+    "atomic_mass": 137.33
   },
   {
     "symbol": "La",
@@ -453,7 +509,8 @@
     "number": 57,
     "group": 3,
     "period": 6,
-    "category": "lanthanide"
+    "category": "lanthanide",
+    "atomic_mass": 138.91
   },
   {
     "symbol": "Ce",
@@ -461,7 +518,8 @@
     "number": 58,
     "group": null,
     "period": 6,
-    "category": "lanthanide"
+    "category": "lanthanide",
+    "atomic_mass": 140.12
   },
   {
     "symbol": "Pr",
@@ -469,7 +527,8 @@
     "number": 59,
     "group": null,
     "period": 6,
-    "category": "lanthanide"
+    "category": "lanthanide",
+    "atomic_mass": 140.91
   },
   {
     "symbol": "Nd",
@@ -477,7 +536,8 @@
     "number": 60,
     "group": null,
     "period": 6,
-    "category": "lanthanide"
+    "category": "lanthanide",
+    "atomic_mass": 144.24
   },
   {
     "symbol": "Pm",
@@ -485,7 +545,8 @@
     "number": 61,
     "group": null,
     "period": 6,
-    "category": "lanthanide"
+    "category": "lanthanide",
+    "atomic_mass": 145
   },
   {
     "symbol": "Sm",
@@ -493,7 +554,8 @@
     "number": 62,
     "group": null,
     "period": 6,
-    "category": "lanthanide"
+    "category": "lanthanide",
+    "atomic_mass": 150.36
   },
   {
     "symbol": "Eu",
@@ -501,7 +563,8 @@
     "number": 63,
     "group": null,
     "period": 6,
-    "category": "lanthanide"
+    "category": "lanthanide",
+    "atomic_mass": 151.96
   },
   {
     "symbol": "Gd",
@@ -509,7 +572,8 @@
     "number": 64,
     "group": null,
     "period": 6,
-    "category": "lanthanide"
+    "category": "lanthanide",
+    "atomic_mass": 157.25
   },
   {
     "symbol": "Tb",
@@ -517,7 +581,8 @@
     "number": 65,
     "group": null,
     "period": 6,
-    "category": "lanthanide"
+    "category": "lanthanide",
+    "atomic_mass": 158.93
   },
   {
     "symbol": "Dy",
@@ -525,7 +590,8 @@
     "number": 66,
     "group": null,
     "period": 6,
-    "category": "lanthanide"
+    "category": "lanthanide",
+    "atomic_mass": 162.5
   },
   {
     "symbol": "Ho",
@@ -533,7 +599,8 @@
     "number": 67,
     "group": null,
     "period": 6,
-    "category": "lanthanide"
+    "category": "lanthanide",
+    "atomic_mass": 164.93
   },
   {
     "symbol": "Er",
@@ -541,7 +608,8 @@
     "number": 68,
     "group": null,
     "period": 6,
-    "category": "lanthanide"
+    "category": "lanthanide",
+    "atomic_mass": 167.26
   },
   {
     "symbol": "Tm",
@@ -549,7 +617,8 @@
     "number": 69,
     "group": null,
     "period": 6,
-    "category": "lanthanide"
+    "category": "lanthanide",
+    "atomic_mass": 168.93
   },
   {
     "symbol": "Yb",
@@ -557,7 +626,8 @@
     "number": 70,
     "group": null,
     "period": 6,
-    "category": "lanthanide"
+    "category": "lanthanide",
+    "atomic_mass": 173.05
   },
   {
     "symbol": "Lu",
@@ -565,7 +635,8 @@
     "number": 71,
     "group": 3,
     "period": 6,
-    "category": "lanthanide"
+    "category": "lanthanide",
+    "atomic_mass": 174.97
   },
   {
     "symbol": "Hf",
@@ -573,7 +644,8 @@
     "number": 72,
     "group": 4,
     "period": 6,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 178.49
   },
   {
     "symbol": "Ta",
@@ -581,7 +653,8 @@
     "number": 73,
     "group": 5,
     "period": 6,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 180.95
   },
   {
     "symbol": "W",
@@ -589,7 +662,8 @@
     "number": 74,
     "group": 6,
     "period": 6,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 183.84
   },
   {
     "symbol": "Re",
@@ -597,7 +671,8 @@
     "number": 75,
     "group": 7,
     "period": 6,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 186.21
   },
   {
     "symbol": "Os",
@@ -605,7 +680,8 @@
     "number": 76,
     "group": 8,
     "period": 6,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 190.23
   },
   {
     "symbol": "Ir",
@@ -613,7 +689,8 @@
     "number": 77,
     "group": 9,
     "period": 6,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 192.22
   },
   {
     "symbol": "Pt",
@@ -621,7 +698,8 @@
     "number": 78,
     "group": 10,
     "period": 6,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 195.08
   },
   {
     "symbol": "Au",
@@ -629,7 +707,8 @@
     "number": 79,
     "group": 11,
     "period": 6,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 196.97
   },
   {
     "symbol": "Hg",
@@ -637,7 +716,8 @@
     "number": 80,
     "group": 12,
     "period": 6,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 200.59
   },
   {
     "symbol": "Tl",
@@ -645,7 +725,8 @@
     "number": 81,
     "group": 13,
     "period": 6,
-    "category": "post-transition-metal"
+    "category": "post-transition-metal",
+    "atomic_mass": 204.38
   },
   {
     "symbol": "Pb",
@@ -653,7 +734,8 @@
     "number": 82,
     "group": 14,
     "period": 6,
-    "category": "post-transition-metal"
+    "category": "post-transition-metal",
+    "atomic_mass": 207.2
   },
   {
     "symbol": "Bi",
@@ -661,7 +743,8 @@
     "number": 83,
     "group": 15,
     "period": 6,
-    "category": "post-transition-metal"
+    "category": "post-transition-metal",
+    "atomic_mass": 208.98
   },
   {
     "symbol": "Po",
@@ -669,7 +752,8 @@
     "number": 84,
     "group": 16,
     "period": 6,
-    "category": "metalloid"
+    "category": "metalloid",
+    "atomic_mass": 209
   },
   {
     "symbol": "At",
@@ -677,7 +761,8 @@
     "number": 85,
     "group": 17,
     "period": 6,
-    "category": "halogen"
+    "category": "halogen",
+    "atomic_mass": 210
   },
   {
     "symbol": "Rn",
@@ -685,7 +770,8 @@
     "number": 86,
     "group": 18,
     "period": 6,
-    "category": "noble-gas"
+    "category": "noble-gas",
+    "atomic_mass": 222
   },
   {
     "symbol": "Fr",
@@ -693,7 +779,8 @@
     "number": 87,
     "group": 1,
     "period": 7,
-    "category": "alkali-metal"
+    "category": "alkali-metal",
+    "atomic_mass": 223
   },
   {
     "symbol": "Ra",
@@ -701,7 +788,8 @@
     "number": 88,
     "group": 2,
     "period": 7,
-    "category": "alkaline-earth-metal"
+    "category": "alkaline-earth-metal",
+    "atomic_mass": 226
   },
   {
     "symbol": "Ac",
@@ -709,7 +797,8 @@
     "number": 89,
     "group": 3,
     "period": 7,
-    "category": "actinide"
+    "category": "actinide",
+    "atomic_mass": 227
   },
   {
     "symbol": "Th",
@@ -717,7 +806,8 @@
     "number": 90,
     "group": null,
     "period": 7,
-    "category": "actinide"
+    "category": "actinide",
+    "atomic_mass": 232.04
   },
   {
     "symbol": "Pa",
@@ -725,7 +815,8 @@
     "number": 91,
     "group": null,
     "period": 7,
-    "category": "actinide"
+    "category": "actinide",
+    "atomic_mass": 231.04
   },
   {
     "symbol": "U",
@@ -733,7 +824,8 @@
     "number": 92,
     "group": null,
     "period": 7,
-    "category": "actinide"
+    "category": "actinide",
+    "atomic_mass": 238.03
   },
   {
     "symbol": "Np",
@@ -741,7 +833,8 @@
     "number": 93,
     "group": null,
     "period": 7,
-    "category": "actinide"
+    "category": "actinide",
+    "atomic_mass": 237
   },
   {
     "symbol": "Pu",
@@ -749,7 +842,8 @@
     "number": 94,
     "group": null,
     "period": 7,
-    "category": "actinide"
+    "category": "actinide",
+    "atomic_mass": 244
   },
   {
     "symbol": "Am",
@@ -757,7 +851,8 @@
     "number": 95,
     "group": null,
     "period": 7,
-    "category": "actinide"
+    "category": "actinide",
+    "atomic_mass": 243
   },
   {
     "symbol": "Cm",
@@ -765,7 +860,8 @@
     "number": 96,
     "group": null,
     "period": 7,
-    "category": "actinide"
+    "category": "actinide",
+    "atomic_mass": 247
   },
   {
     "symbol": "Bk",
@@ -773,7 +869,8 @@
     "number": 97,
     "group": null,
     "period": 7,
-    "category": "actinide"
+    "category": "actinide",
+    "atomic_mass": 247
   },
   {
     "symbol": "Cf",
@@ -781,7 +878,8 @@
     "number": 98,
     "group": null,
     "period": 7,
-    "category": "actinide"
+    "category": "actinide",
+    "atomic_mass": 251
   },
   {
     "symbol": "Es",
@@ -789,7 +887,8 @@
     "number": 99,
     "group": null,
     "period": 7,
-    "category": "actinide"
+    "category": "actinide",
+    "atomic_mass": 252
   },
   {
     "symbol": "Fm",
@@ -797,7 +896,8 @@
     "number": 100,
     "group": null,
     "period": 7,
-    "category": "actinide"
+    "category": "actinide",
+    "atomic_mass": 257
   },
   {
     "symbol": "Md",
@@ -805,7 +905,8 @@
     "number": 101,
     "group": null,
     "period": 7,
-    "category": "actinide"
+    "category": "actinide",
+    "atomic_mass": 258
   },
   {
     "symbol": "No",
@@ -813,7 +914,8 @@
     "number": 102,
     "group": null,
     "period": 7,
-    "category": "actinide"
+    "category": "actinide",
+    "atomic_mass": 259
   },
   {
     "symbol": "Lr",
@@ -821,7 +923,8 @@
     "number": 103,
     "group": 3,
     "period": 7,
-    "category": "actinide"
+    "category": "actinide",
+    "atomic_mass": 266
   },
   {
     "symbol": "Rf",
@@ -829,7 +932,8 @@
     "number": 104,
     "group": 4,
     "period": 7,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 267
   },
   {
     "symbol": "Db",
@@ -837,7 +941,8 @@
     "number": 105,
     "group": 5,
     "period": 7,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 270
   },
   {
     "symbol": "Sg",
@@ -845,7 +950,8 @@
     "number": 106,
     "group": 6,
     "period": 7,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 271
   },
   {
     "symbol": "Bh",
@@ -853,7 +959,8 @@
     "number": 107,
     "group": 7,
     "period": 7,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 270
   },
   {
     "symbol": "Hs",
@@ -861,7 +968,8 @@
     "number": 108,
     "group": 8,
     "period": 7,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 277
   },
   {
     "symbol": "Mt",
@@ -869,7 +977,8 @@
     "number": 109,
     "group": 9,
     "period": 7,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 278
   },
   {
     "symbol": "Ds",
@@ -877,7 +986,8 @@
     "number": 110,
     "group": 10,
     "period": 7,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 281
   },
   {
     "symbol": "Rg",
@@ -885,7 +995,8 @@
     "number": 111,
     "group": 11,
     "period": 7,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 282
   },
   {
     "symbol": "Cn",
@@ -893,7 +1004,8 @@
     "number": 112,
     "group": 12,
     "period": 7,
-    "category": "transition-metal"
+    "category": "transition-metal",
+    "atomic_mass": 285
   },
   {
     "symbol": "Nh",
@@ -901,7 +1013,8 @@
     "number": 113,
     "group": 13,
     "period": 7,
-    "category": "post-transition-metal"
+    "category": "post-transition-metal",
+    "atomic_mass": 286
   },
   {
     "symbol": "Fl",
@@ -909,7 +1022,8 @@
     "number": 114,
     "group": 14,
     "period": 7,
-    "category": "post-transition-metal"
+    "category": "post-transition-metal",
+    "atomic_mass": 289
   },
   {
     "symbol": "Mc",
@@ -917,7 +1031,8 @@
     "number": 115,
     "group": 15,
     "period": 7,
-    "category": "post-transition-metal"
+    "category": "post-transition-metal",
+    "atomic_mass": 290
   },
   {
     "symbol": "Lv",
@@ -925,7 +1040,8 @@
     "number": 116,
     "group": 16,
     "period": 7,
-    "category": "post-transition-metal"
+    "category": "post-transition-metal",
+    "atomic_mass": 293
   },
   {
     "symbol": "Ts",
@@ -933,7 +1049,8 @@
     "number": 117,
     "group": 17,
     "period": 7,
-    "category": "halogen"
+    "category": "halogen",
+    "atomic_mass": 294
   },
   {
     "symbol": "Og",
@@ -941,6 +1058,7 @@
     "number": 118,
     "group": 18,
     "period": 7,
-    "category": "noble-gas"
+    "category": "noble-gas",
+    "atomic_mass": 294
   }
 ]

@@ -65,9 +65,12 @@
                 info.innerHTML = `
                   <h2>${el.name} (${el.symbol})</h2>
                   <p><strong>Atomic Number:</strong> ${el.number}</p>
-                  <p><strong>Group:</strong> ${el.group}</p>
+                  <p><strong>Group:</strong> ${
+                    el.group !== null ? el.group : "-"
+                  }</p>
                   <p><strong>Period:</strong> ${el.period}</p>
                   <p><strong>Category:</strong> ${el.category}</p>
+                  <p><strong>Atomic Mass:</strong> ${el.atomic_mass}</p>
                 `;
                 info.style.display = "block";
               });
@@ -81,9 +84,12 @@
                 info.innerHTML = `
                   <h2>${el.name} (${el.symbol})</h2>
                   <p><strong>Atomic Number:</strong> ${el.number}</p>
-                  <p><strong>Group:</strong> ${el.group}</p>
+                  <p><strong>Group:</strong> ${
+                    el.group !== null ? el.group : "-"
+                  }</p>
                   <p><strong>Period:</strong> ${el.period}</p>
                   <p><strong>Category:</strong> ${el.category}</p>
+                  <p><strong>Atomic Mass:</strong> ${el.atomic_mass}</p>
                 `;
                 info.style.display = "block";
               });
@@ -103,6 +109,7 @@
                   <p><strong>Group:</strong> ${el.group}</p>
                   <p><strong>Period:</strong> ${el.period}</p>
                   <p><strong>Category:</strong> ${el.category}</p>
+                  <p><strong>Atomic Mass:</strong> ${el.atomic_mass}</p>
                 `;
                 info.style.display = "block";
               });
