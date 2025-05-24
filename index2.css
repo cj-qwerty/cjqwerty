@@ -71,7 +71,15 @@ h1.table-title {
   color: #fff;
 }
 .periodic-element.alkaline-earth-metal {
-  background: #ffdead;
+  background: #ffd700;
+  color: #333;
+}
+.periodic-element.lanthanide {
+  background: #ffbfff;
+  color: #333;
+}
+.periodic-element.actinide {
+  background: #ff99cc;
   color: #333;
 }
 .periodic-element.transition-metal {
@@ -91,24 +99,24 @@ h1.table-title {
   color: #333;
 }
 .periodic-element.halogen {
-  background: #ffd700;
+  background: #66ccff;
   color: #333;
 }
 .periodic-element.noble-gas {
   background: #b3d1ff;
   color: #333;
 }
-.periodic-element.lanthanide {
-  background: #ffbfff;
-  color: #333;
-}
-.periodic-element.actinide {
-  background: #ff99cc;
-  color: #333;
-}
 .periodic-element.metal {
   background: #b0b0b0;
   color: #333;
+}
+
+/* ให้ H ไม่มีสีพื้นหลัง */
+.periodic-element[symbol="H"],
+.periodic-element.hydrogen {
+  background: transparent !important;
+  color: #333 !important;
+  border: 1px solid #ccc !important;
 }
 
 /* Lanthanide and Actinide rows */
@@ -166,12 +174,154 @@ h1.table-title {
   position: relative;
 }
 
-/* เพิ่มสีพิเศษให้ Hydrogen */
+/* สีธาตุตามภาพตัวอย่าง (แบ่งกลุ่ม) */
+
+/* H, He */
 .periodic-element[symbol="H"],
 .periodic-element.hydrogen {
-  background: #ff4d4d !important; /* สีแดงสด */
-  color: #fff !important;
-  border: 2px solid #b30000 !important;
+  background: #ffe066 !important;
+  color: #333 !important;
+  border: 1.5px solid #b3a100 !important;
+  font-weight: bold;
+}
+.periodic-element[symbol="He"],
+.periodic-element.helium {
+  background: #ffe066 !important;
+  color: #333 !important;
+}
+
+/* กลุ่มสีแดง (Alkali, Alkali Earth, Fr, Ra) */
+.periodic-element[symbol="Li"],
+.periodic-element[symbol="Na"],
+.periodic-element[symbol="K"],
+.periodic-element[symbol="Rb"],
+.periodic-element[symbol="Cs"],
+.periodic-element[symbol="Fr"] {
+  background: #ffb3b3 !important;
+  color: #333 !important;
+}
+.periodic-element[symbol="Be"],
+.periodic-element[symbol="Mg"],
+.periodic-element[symbol="Ca"],
+.periodic-element[symbol="Sr"],
+.periodic-element[symbol="Ba"],
+.periodic-element[symbol="Ra"] {
+  background: #e6b3ff !important;
+  color: #333 !important;
+}
+
+/* กลุ่มสีฟ้า (Transition metals, Lanthanides, Actinides) */
+.periodic-element[symbol="Sc"],
+.periodic-element[symbol="Ti"],
+.periodic-element[symbol="V"],
+.periodic-element[symbol="Cr"],
+.periodic-element[symbol="Mn"],
+.periodic-element[symbol="Fe"],
+.periodic-element[symbol="Co"],
+.periodic-element[symbol="Ni"],
+.periodic-element[symbol="Cu"],
+.periodic-element[symbol="Zn"],
+.periodic-element[symbol="Y"],
+.periodic-element[symbol="Zr"],
+.periodic-element[symbol="Nb"],
+.periodic-element[symbol="Mo"],
+.periodic-element[symbol="Tc"],
+.periodic-element[symbol="Ru"],
+.periodic-element[symbol="Rh"],
+.periodic-element[symbol="Pd"],
+.periodic-element[symbol="Ag"],
+.periodic-element[symbol="Cd"],
+.periodic-element[symbol="Hf"],
+.periodic-element[symbol="Ta"],
+.periodic-element[symbol="W"],
+.periodic-element[symbol="Re"],
+.periodic-element[symbol="Os"],
+.periodic-element[symbol="Ir"],
+.periodic-element[symbol="Pt"],
+.periodic-element[symbol="Au"],
+.periodic-element[symbol="Hg"],
+.periodic-element[symbol="Rf"],
+.periodic-element[symbol="Db"],
+.periodic-element[symbol="Sg"],
+.periodic-element[symbol="Bh"],
+.periodic-element[symbol="Hs"],
+.periodic-element[symbol="Mt"],
+.periodic-element[symbol="Ds"],
+.periodic-element[symbol="Rg"],
+.periodic-element[symbol="Cn"],
+.periodic-element[symbol="La"],
+.periodic-element[symbol="Ce"],
+.periodic-element[symbol="Pr"],
+.periodic-element[symbol="Nd"],
+.periodic-element[symbol="Pm"],
+.periodic-element[symbol="Sm"],
+.periodic-element[symbol="Eu"],
+.periodic-element[symbol="Gd"],
+.periodic-element[symbol="Tb"],
+.periodic-element[symbol="Dy"],
+.periodic-element[symbol="Ho"],
+.periodic-element[symbol="Er"],
+.periodic-element[symbol="Tm"],
+.periodic-element[symbol="Yb"],
+.periodic-element[symbol="Lu"],
+.periodic-element[symbol="Ac"],
+.periodic-element[symbol="Th"],
+.periodic-element[symbol="Pa"],
+.periodic-element[symbol="U"],
+.periodic-element[symbol="Np"],
+.periodic-element[symbol="Pu"],
+.periodic-element[symbol="Am"],
+.periodic-element[symbol="Cm"],
+.periodic-element[symbol="Bk"],
+.periodic-element[symbol="Cf"],
+.periodic-element[symbol="Es"],
+.periodic-element[symbol="Fm"],
+.periodic-element[symbol="Md"],
+.periodic-element[symbol="No"],
+.periodic-element[symbol="Lr"] {
+  background: #99e6ff !important;
+  color: #333 !important;
+}
+
+/* กลุ่มสีเขียว (Metalloids, Post-transition, Nonmetal, Halogen, Noble gas) */
+.periodic-element[symbol="B"],
+.periodic-element[symbol="C"],
+.periodic-element[symbol="N"],
+.periodic-element[symbol="O"],
+.periodic-element[symbol="F"],
+.periodic-element[symbol="Ne"],
+.periodic-element[symbol="Si"],
+.periodic-element[symbol="P"],
+.periodic-element[symbol="S"],
+.periodic-element[symbol="Cl"],
+.periodic-element[symbol="Ar"],
+.periodic-element[symbol="Ge"],
+.periodic-element[symbol="As"],
+.periodic-element[symbol="Se"],
+.periodic-element[symbol="Br"],
+.periodic-element[symbol="Kr"],
+.periodic-element[symbol="Sb"],
+.periodic-element[symbol="Te"],
+.periodic-element[symbol="I"],
+.periodic-element[symbol="Xe"],
+.periodic-element[symbol="Po"],
+.periodic-element[symbol="At"],
+.periodic-element[symbol="Rn"],
+.periodic-element[symbol="Nh"],
+.periodic-element[symbol="Fl"],
+.periodic-element[symbol="Mc"],
+.periodic-element[symbol="Lv"],
+.periodic-element[symbol="Ts"],
+.periodic-element[symbol="Og"],
+.periodic-element[symbol="Al"],
+.periodic-element[symbol="Ga"],
+.periodic-element[symbol="In"],
+.periodic-element[symbol="Sn"],
+.periodic-element[symbol="Tl"],
+.periodic-element[symbol="Pb"],
+.periodic-element[symbol="Bi"] {
+  background: #b3ffb3 !important;
+  color: #333 !important;
 }
 
 /* Responsive: ตารางธาตุในมือถือ */

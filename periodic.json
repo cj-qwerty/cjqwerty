@@ -237,7 +237,7 @@
     "number": 30,
     "group": 12,
     "period": 4,
-    "category": "post-transition-metal"
+    "category": "transition-metal"
   },
   {
     "symbol": "Ga",
@@ -381,7 +381,7 @@
     "number": 48,
     "group": 12,
     "period": 5,
-    "category": "post-transition-metal"
+    "category": "transition-metal"
   },
   {
     "symbol": "In",
@@ -637,7 +637,7 @@
     "number": 80,
     "group": 12,
     "period": 6,
-    "category": "post-transition-metal"
+    "category": "transition-metal"
   },
   {
     "symbol": "Tl",
@@ -677,7 +677,7 @@
     "number": 85,
     "group": 17,
     "period": 6,
-    "category": "metalloid"
+    "category": "halogen"
   },
   {
     "symbol": "Rn",
@@ -893,7 +893,7 @@
     "number": 112,
     "group": 12,
     "period": 7,
-    "category": "post-transition-metal"
+    "category": "transition-metal"
   },
   {
     "symbol": "Nh",
