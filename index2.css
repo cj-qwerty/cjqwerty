@@ -1,0 +1,205 @@
+body.table-page {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 2rem;
+  color: #333;
+}
+h1.table-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.periodic-table {
+  display: grid;
+  grid-template-columns: repeat(18, minmax(28px, 1fr));
+  gap: 5px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.periodic-element {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px 0;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s;
+  font-weight: bold;
+  color: #fff;
+  font-size: clamp(12px, 2.8vw, 20px);
+  min-height: 38px;
+  min-width: 28px;
+  box-sizing: border-box;
+  background: #888;
+  user-select: none;
+}
+.periodic-element:hover {
+  transform: scale(1.08);
+  filter: brightness(1.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  z-index: 2;
+  position: relative;
+}
+/* Removed duplicate .metal, .nonmetal, and .metalloid class definitions to avoid conflicts */
+.empty {
+  background-color: transparent;
+  border: none;
+  pointer-events: none;
+}
+.element-info {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+.element-info h2 {
+  margin-top: 0;
+}
+.ads-container {
+  margin-top: 50px;
+}
+
+/* Example category colors */
+.periodic-element.alkali-metal {
+  background: #ff6666;
+  color: #fff;
+}
+.periodic-element.alkaline-earth-metal {
+  background: #ffdead;
+  color: #333;
+}
+.periodic-element.transition-metal {
+  background: #ffc966;
+  color: #333;
+}
+.periodic-element.post-transition-metal {
+  background: #cccccc;
+  color: #333;
+}
+.periodic-element.metalloid {
+  background: #cccc99;
+  color: #333;
+}
+.periodic-element.nonmetal {
+  background: #b3e3b5;
+  color: #333;
+}
+.periodic-element.halogen {
+  background: #ffd700;
+  color: #333;
+}
+.periodic-element.noble-gas {
+  background: #b3d1ff;
+  color: #333;
+}
+.periodic-element.lanthanide {
+  background: #ffbfff;
+  color: #333;
+}
+.periodic-element.actinide {
+  background: #ff99cc;
+  color: #333;
+}
+.periodic-element.metal {
+  background: #b0b0b0;
+  color: #333;
+}
+
+/* Lanthanide and Actinide rows */
+.lan-act-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px; /* กลับมาเป็น 10px */
+  margin: 24px auto 0 auto;
+  max-width: 1100px;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.lan-act-row > div:first-child {
+  min-width: 70px;
+  font-weight: bold;
+  color: #555;
+  text-align: right;
+  margin-right: 8px;
+}
+
+.lanthanide-row,
+.actinide-row {
+  display: grid;
+  grid-template-columns: repeat(15, minmax(28px, 1fr));
+  gap: 0; /* ติดกันเฉพาะธาตุในแถวล่าง */
+  flex: 1;
+}
+
+.lanthanide-row .periodic-element,
+.actinide-row .periodic-element {
+  min-width: 28px;
+  min-height: 38px;
+  font-size: clamp(12px, 2.8vw, 20px);
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  background: #ffbfff; /* lanthanide default */
+  color: #333;
+}
+
+.actinide-row .periodic-element {
+  background: #ff99cc; /* actinide default */
+}
+
+.lanthanide-row .periodic-element:hover,
+.actinide-row .periodic-element:hover {
+  transform: scale(1.08);
+  filter: brightness(1.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  z-index: 2;
+  position: relative;
+}
+
+/* Responsive: ตารางธาตุในมือถือ */
+@media (max-width: 700px) {
+  .periodic-table {
+    grid-template-columns: repeat(18, minmax(18px, 1fr));
+    max-width: 100vw;
+    font-size: 12px;
+  }
+  .periodic-element {
+    font-size: clamp(10px, 3vw, 16px);
+    min-height: 24px;
+    min-width: 18px;
+    padding: 4px 0;
+  }
+  .element-info {
+    font-size: 14px;
+    padding: 0.5rem;
+  }
+  .lan-act-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    max-width: 100vw;
+    margin: 0;
+  }
+  .lanthanide-row,
+  .actinide-row {
+    grid-template-columns: repeat(15, minmax(18px, 1fr));
+    gap: 0;
+  }
+  .lanthanide-row .periodic-element,
+  .actinide-row .periodic-element {
+    min-width: 18px;
+    min-height: 24px;
+    font-size: clamp(10px, 3vw, 16px);
+    padding: 4px 0;
+  }
+}

@@ -4,82 +4,7 @@
     <meta charset="UTF-8" />
     <title>Interactive Periodic Table</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 2rem;
-        color: #333;
-      }
-      h1 {
-        text-align: center;
-        margin-bottom: 2rem;
-      }
-      .table {
-        display: grid;
-        grid-template-columns: repeat(18, 60px);
-        gap: 5px;
-        justify-content: center;
-      }
-      .element {
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        padding: 10px;
-        text-align: center;
-        cursor: pointer;
-        transition: transform 0.2s ease;
-        font-weight: bold;
-        color: #fff;
-      }
-      .element:hover {
-        transform: scale(1.1);
-        filter: brightness(1.2);
-      }
-      .metal {
-        background-color: #4caf50;
-      }
-      .nonmetal {
-        background-color: #2196f3;
-      }
-      .metalloid {
-        background-color: #ff9800;
-      }
-      .empty {
-        background-color: transparent;
-        border: none;
-        pointer-events: none;
-      }
-      .info {
-        margin-top: 2rem;
-        padding: 1rem;
-        background-color: #ffffff;
-        border-radius: 8px;
-        max-width: 400px;
-        margin-left: auto;
-        margin-right: auto;
-        display: none;
-      }
-      .info h2 {
-        margin-top: 0;
-      }
-      .taskbar {
-        margin-bottom: 2rem;
-        text-align: center;
-      }
-      .taskbar-link {
-        margin: 0 10px;
-        text-decoration: none;
-        color: #4a90e2;
-        font-weight: bold;
-      }
-      .taskbar-link:hover {
-        text-decoration: underline;
-      }
-      .ads-container {
-        margin-top: 50px;
-      }
-    </style>
+    <link rel="stylesheet" href="index2.css" />
   </head>
   <body>
     <div class="taskbar">
@@ -89,7 +14,15 @@
       <a class="taskbar-link" href="index4.html">coming soon</a>
     </div>
     <h1>Interactive Periodic Table</h1>
-    <div class="table" id="periodicTable"></div>
+    <div class="periodic-table" id="periodicTable"></div>
+    <div class="lan-act-row">
+      <div>Lanthanides</div>
+      <div class="lanthanide-row" id="lanthanideRow"></div>
+    </div>
+    <div class="lan-act-row">
+      <div>Actinides</div>
+      <div class="actinide-row" id="actinideRow"></div>
+    </div>
     <div class="info" id="infoPanel"></div>
     <!-- Ads Section -->
     <div class="ads-container">
@@ -106,156 +39,76 @@
       </script>
     </div>
     <script>
-      const elements = [
-        {
-          symbol: "H",
-          name: "Hydrogen",
-          number: 1,
-          group: 1,
-          period: 1,
-          category: "nonmetal",
-        },
-        {
-          symbol: "He",
-          name: "Helium",
-          number: 2,
-          group: 18,
-          period: 1,
-          category: "nonmetal",
-        },
-        {
-          symbol: "Li",
-          name: "Lithium",
-          number: 3,
-          group: 1,
-          period: 2,
-          category: "metal",
-        },
-        {
-          symbol: "Be",
-          name: "Beryllium",
-          number: 4,
-          group: 2,
-          period: 2,
-          category: "metal",
-        },
-        {
-          symbol: "B",
-          name: "Boron",
-          number: 5,
-          group: 13,
-          period: 2,
-          category: "metalloid",
-        },
-        {
-          symbol: "C",
-          name: "Carbon",
-          number: 6,
-          group: 14,
-          period: 2,
-          category: "nonmetal",
-        },
-        {
-          symbol: "N",
-          name: "Nitrogen",
-          number: 7,
-          group: 15,
-          period: 2,
-          category: "nonmetal",
-        },
-        {
-          symbol: "O",
-          name: "Oxygen",
-          number: 8,
-          group: 16,
-          period: 2,
-          category: "nonmetal",
-        },
-        {
-          symbol: "F",
-          name: "Fluorine",
-          number: 9,
-          group: 17,
-          period: 2,
-          category: "nonmetal",
-        },
-        {
-          symbol: "Ne",
-          name: "Neon",
-          number: 10,
-          group: 18,
-          period: 2,
-          category: "nonmetal",
-        },
-        {
-          symbol: "Na",
-          name: "Sodium",
-          number: 11,
-          group: 1,
-          period: 3,
-          category: "metal",
-        },
-        {
-          symbol: "Mg",
-          name: "Magnesium",
-          number: 12,
-          group: 2,
-          period: 3,
-          category: "metal",
-        },
-        {
-          symbol: "Al",
-          name: "Aluminum",
-          number: 13,
-          group: 13,
-          period: 3,
-          category: "metal",
-        },
-        {
-          symbol: "Si",
-          name: "Silicon",
-          number: 14,
-          group: 14,
-          period: 3,
-          category: "metalloid",
-        },
-        {
-          symbol: "P",
-          name: "Phosphorus",
-          number: 15,
-          group: 15,
-          period: 3,
-          category: "nonmetal",
-        },
-      ];
-
       const table = document.getElementById("periodicTable");
+      const lanthanideRow = document.getElementById("lanthanideRow");
+      const actinideRow = document.getElementById("actinideRow");
       const info = document.getElementById("infoPanel");
 
-      const totalCells = 7 * 18; // 7 periods * 18 groups
-      for (let i = 0; i < totalCells; i++) {
-        const cell = document.createElement("div");
-        cell.classList.add("empty");
-        table.appendChild(cell);
-      }
+      fetch("periodic.json")
+        .then((response) => response.json())
+        .then((elements) => {
+          // สร้าง grid 7x18
+          const totalCells = 7 * 18;
+          for (let i = 0; i < totalCells; i++) {
+            const cell = document.createElement("div");
+            cell.classList.add("empty");
+            table.appendChild(cell);
+          }
 
-      elements.forEach((el) => {
-        const index = (el.period - 1) * 18 + (el.group - 1);
-        const cell = table.children[index];
-        cell.className = `element ${el.category}`;
-        cell.textContent = el.symbol;
-        cell.title = el.name;
-        cell.addEventListener("click", () => {
-          info.innerHTML = `
-            <h2>${el.name} (${el.symbol})</h2>
-            <p><strong>Atomic Number:</strong> ${el.number}</p>
-            <p><strong>Group:</strong> ${el.group}</p>
-            <p><strong>Period:</strong> ${el.period}</p>
-            <p><strong>Category:</strong> ${el.category}</p>
-          `;
-          info.style.display = "block";
+          elements.forEach((el) => {
+            if (el.category === "lanthanide") {
+              const cell = document.createElement("div");
+              cell.className = `periodic-element ${el.category}`;
+              cell.textContent = el.symbol;
+              cell.title = el.name;
+              cell.addEventListener("click", () => {
+                info.innerHTML = `
+                  <h2>${el.name} (${el.symbol})</h2>
+                  <p><strong>Atomic Number:</strong> ${el.number}</p>
+                  <p><strong>Group:</strong> ${el.group}</p>
+                  <p><strong>Period:</strong> ${el.period}</p>
+                  <p><strong>Category:</strong> ${el.category}</p>
+                `;
+                info.style.display = "block";
+              });
+              lanthanideRow.appendChild(cell);
+            } else if (el.category === "actinide") {
+              const cell = document.createElement("div");
+              cell.className = `periodic-element ${el.category}`;
+              cell.textContent = el.symbol;
+              cell.title = el.name;
+              cell.addEventListener("click", () => {
+                info.innerHTML = `
+                  <h2>${el.name} (${el.symbol})</h2>
+                  <p><strong>Atomic Number:</strong> ${el.number}</p>
+                  <p><strong>Group:</strong> ${el.group}</p>
+                  <p><strong>Period:</strong> ${el.period}</p>
+                  <p><strong>Category:</strong> ${el.category}</p>
+                `;
+                info.style.display = "block";
+              });
+              actinideRow.appendChild(cell);
+            } else if (el.group != null && el.period != null) {
+              // group, period เริ่มที่ 1
+              // index = (period-1)*18 + (group-1)
+              const index = (el.period - 1) * 18 + (el.group - 1);
+              const cell = table.children[index];
+              cell.className = `periodic-element ${el.category}`;
+              cell.textContent = el.symbol;
+              cell.title = el.name;
+              cell.addEventListener("click", () => {
+                info.innerHTML = `
+                  <h2>${el.name} (${el.symbol})</h2>
+                  <p><strong>Atomic Number:</strong> ${el.number}</p>
+                  <p><strong>Group:</strong> ${el.group}</p>
+                  <p><strong>Period:</strong> ${el.period}</p>
+                  <p><strong>Category:</strong> ${el.category}</p>
+                `;
+                info.style.display = "block";
+              });
+            }
+          });
         });
-      });
     </script>
   </body>
 </html>
